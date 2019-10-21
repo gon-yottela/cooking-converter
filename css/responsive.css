@@ -70,7 +70,7 @@
 /* スマホ用 */
 @media screen and (max-width: 568px) {
   h1 {
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin: 0 16px 0 16px;
   }
 
@@ -78,9 +78,13 @@
     top: 16px;
   }
 
-  .title img {
+  /* なんかスマホで国旗の比率がおかしくなるので削除するか… */
+  /* .title img {
     width: 32px;
     height: auto;
+  } */
+  .title img {
+    display: none;
   }
 
   .content1 {
@@ -124,58 +128,58 @@
   }
 
 
-/* カップ */
-.cup1,
-.cup2 {
-  flex-wrap: wrap;
-}
+  /* カップ */
+  .cup1,
+  .cup2 {
+    flex-wrap: wrap;
+  }
 
-.cup-equal1,
-.cup-equal2 {
-  width: 28%;
-  text-align: right;
-}
+  .cup-equal1,
+  .cup-equal2 {
+    width: 28%;
+    text-align: right;
+  }
 
-.cup-equal1 p,
-.cup-equal2 p {
-  font-size: 1.3rem;
-  padding: 0 16px;
-  line-height: 48px;
-}
+  .cup-equal1 p,
+  .cup-equal2 p {
+    font-size: 1.3rem;
+    padding: 0 16px;
+    line-height: 48px;
+  }
 
-.input1,
-.input2 {
-  width: 72%;
-}
-
-
-.cup-equal1,
-.input1 {
-  margin-bottom: 16px;
-}
+  .input1,
+  .input2 {
+    width: 72%;
+  }
 
 
-/* 重さ */
+  .cup-equal1,
+  .input1 {
+    margin-bottom: 16px;
+  }
 
-.equal-box {
-  width: 25%;
-}
 
-.oz-lb-box {
-  width: 75%;
-}
+  /* 重さ */
 
-.spoon-left h2,
-.spoon-center p,
-.spoon-right h2 {
-  font-size: 1.5rem;
-  vertical-align: middle;
-  line-height: 40px;
-  padding: 8px;
-}
+  .equal-box {
+    width: 25%;
+  }
 
-footer p {
-  font-size: 0.8rem;
-}
+  .oz-lb-box {
+    width: 75%;
+  }
+
+  .spoon-left h2,
+  .spoon-center p,
+  .spoon-right h2 {
+    font-size: 1.5rem;
+    vertical-align: middle;
+    line-height: 40px;
+    padding: 8px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
 
 }
