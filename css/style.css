@@ -1,0 +1,291 @@
+
+/* 全体の設定 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Century Gothic";
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin: 0 40px 0 40px;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+/* ---------------------------------------- */
+
+/* タイトル */
+.title-bg {
+  width: 100%;
+  height: 120px;
+  display: flex;
+}
+
+.title-bg-left {
+  flex: auto;
+  background-color: #fa776d;
+}
+
+.title-bg-right {
+  flex: auto;
+  background-color: #6088c6;
+}
+
+.title {
+  width: 100%;
+  position: absolute;
+  top: 48px;
+  left: -29px;
+  z-index: 10;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* ---------------------------------------- */
+
+/* メインの部分 */
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content1 {
+  background-color: #fa776d;
+  width: 50%;
+}
+
+.content2 {
+  background-color: #6088c6;
+  width: 50%;
+}
+
+.content3 {
+  background-color: #37ab9d;
+  width: 50%;
+}
+
+.content4 {
+  background-color: #ffbb00;
+  width: 50%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 72px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ---------------------------------------- */
+
+/* 計算部分をくるむdiv */
+.convert-box {
+  margin: 0 auto;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 32px 0;
+}
+
+.convert-box h2 {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+/* アイコン画像 */
+.icon {
+  text-align: center;
+  padding: 16px 0;
+}
+
+/* 入力欄 */
+input {
+  border: none;
+  padding: 16px;
+  margin-right: 10px;
+  width: 144px;
+  font-size: 1.4rem;
+  color: #666;
+  border-radius: 2px;
+}
+
+/* ---------------------------------------- */
+
+/* 計算ボタン */
+.convert-btn {
+  width: 260px;
+  height: 60px;
+  margin: 48px auto;
+  border: 2px solid #fff;
+  border-radius: 260px;
+  cursor: pointer;
+  position: relative;
+  box-sizing: content-box;
+}
+
+/* カーソルを合わせるとボタンの背景色が変わる */
+.convert-btn:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+/* ボタンのクリック有効範囲を曲線に合わせる */
+.convert-btn span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 260px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+  font-weight: normal;
+  font-size: 1.5rem;
+  padding-bottom: 4px;
+  box-sizing: content-box;
+}
+
+/* クリックすると文字が沈む */
+.convert-btn span:active {
+  top: 4px;
+}
+
+/* ---------------------------------------- */
+
+/* 摂氏・華氏の変換 */
+.celsius,
+.fahrenheit {
+  text-align: center;
+  position: relative;
+  left: 8px;
+}
+
+.celsius h2,
+.fahrenheit h2 {
+  position: relative;
+  top: 3px;
+  display: inline-block;
+}
+
+/* ---------------------------------------- */
+
+/* カップの変換 */
+.cup1,
+.cup2 {
+  display: flex;
+  margin: 0 auto;
+}
+
+.cup-equal1,
+.cup-equal2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.cup-equal1 p,
+.cup-equal2 p {
+  padding: 0 32px;
+  line-height: 60px;
+}
+
+.content2 input,
+.content2 h2 {
+  display: inline-block;
+}
+
+
+/* ---------------------------------------- */
+
+/* 重さの変換 */
+.oz-lb {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+/* 入力欄を揃えるための = 用のdiv */
+.equal-box {
+  width: 30%;
+  text-align: right;
+  padding-right: 16px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.equal-box p {
+  line-height: 1.8;
+}
+
+.oz-lb-box {
+  width: 70%;
+  margin-bottom: 16px;
+}
+
+.gram {
+  margin-bottom: 0;
+}
+
+/* ---------------------------------------- */
+
+/* イコールに合わせて揃えるためのフレックスボックス */
+.spoon-flex {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+.spoon-left {
+  text-align: right;
+}
+
+.spoon-center {
+  text-align: center;
+  font-weight: bold;
+}
+
+.spoon-right {
+  text-align: left;
+}
+
+.spoon-left h2,
+.spoon-center p,
+.spoon-right h2 {
+  font-size: 2rem;
+  vertical-align: middle;
+  line-height: 40px;
+  padding: 8px;
+}
+
+/* ---------------------------------------- */
+
+/* フッター */
+footer {
+  padding: 20px 0;
+  background-color: #444;
+}
+
+footer p {
+  color: #999;
+  font-size: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #999;
+}
+
+footer a:hover {
+  color: #bbb;
+}

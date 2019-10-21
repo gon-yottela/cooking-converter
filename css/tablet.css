@@ -1,0 +1,174 @@
+
+/* カップの幅がキツくなってきたら文字と入力欄を小さくする */
+@media screen and (max-width: 1280px) {
+
+  .content2 h2 {
+    font-size: 1.7rem;
+  }
+
+  .content2 input {
+    width: 120px;
+  }
+}
+
+/* さらにカップがキツくなってきたら1カラムにしてタイトルも小さくする */
+@media screen and (max-width: 1136px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .title {
+    left: 0; /* 微調整をクリアしてセンター揃えに */
+  }
+
+  .title-bg {
+    display: none;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .content1 {
+    padding-top: 120px;
+  }
+
+  .content1,
+  .content2,
+  .content3,
+  .content4 {
+    width: 100%;
+  }
+
+}
+
+/* タイトルをもうちょっと小さく */
+@media screen and (max-width: 872px) {
+  h1 {
+    font-size: 2.5rem;
+    position: relative;
+    top: 6px;
+  }
+}
+
+
+/* もうちょっと小さく */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    margin: 0 16px 0 16px;
+
+  }
+
+  .title img {
+    width: 56px;
+    height: auto;
+  }
+}
+
+
+/* スマホ用 */
+@media screen and (max-width: 568px) {
+  h1 {
+    font-size: 1rem;
+    margin: 0 16px 0 16px;
+  }
+
+  .title {
+    top: 16px;
+  }
+
+  .title img {
+    width: 32px;
+    height: auto;
+  }
+
+  .content1 {
+    padding-top: 24px;
+  }
+
+  .container {
+    padding: 56px 0 40px;
+  }
+
+  .content4 .container {
+    padding-bottom: 56px;
+  }
+
+  .icon {
+    padding: 0;
+  }
+
+  .icon img {
+    width: 80px;
+    height: auto;
+  }
+
+  .content2 h2,
+  .content3 h2,
+  .content3 p {
+    font-size: 1.3rem;
+  }
+
+  .content2 input,
+  .content3 input {
+    width: 100px;
+    padding: 12px;
+  }
+
+
+/* カップ */
+.cup1,
+.cup2 {
+  flex-wrap: wrap;
+}
+
+.cup-equal1,
+.cup-equal2 {
+  width: 28%;
+  text-align: right;
+}
+
+.cup-equal1 p,
+.cup-equal2 p {
+  font-size: 1.3rem;
+  padding: 0 16px;
+  line-height: 48px;
+}
+
+.input1,
+.input2 {
+  width: 72%;
+}
+
+
+.cup-equal1,
+.input1 {
+  margin-bottom: 16px;
+}
+
+
+/* 重さ */
+
+.equal-box {
+  width: 25%;
+}
+
+.oz-lb-box {
+  width: 75%;
+}
+
+.spoon-left h2,
+.spoon-center p,
+.spoon-right h2 {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  line-height: 40px;
+  padding: 8px;
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+}
