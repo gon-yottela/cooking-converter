@@ -28,12 +28,12 @@ h2 {
 
 .title-bg-left {
   flex: auto;
-  background-color: #fa776d;
+  background-color: #ee574f;
 }
 
 .title-bg-right {
   flex: auto;
-  background-color: #6088c6;
+  background-color: #046ba9;
 }
 
 .title {
@@ -59,17 +59,17 @@ main {
 }
 
 .content1 {
-  background-color: #f74f5c;
+  background-color: #ee574f;
   width: 50%;
 }
 
 .content2 {
-  background-color: #046bbf;
+  background-color: #046ba9;
   width: 50%;
 }
 
 .content3 {
-  background-color: #009688;
+  background-color: #009385;
   width: 50%;
 }
 
