@@ -195,7 +195,7 @@ $(function() {
 
     // gに入力があったらozとlbに数値を表示
     if (g !== '' && oz === '' && lb === '') {
-      $('#oz').val(Math.round(gToOz * 10) / 10);
+      $('#oz').val(Math.round(gToOz * 100) / 100);
       $('#lb').val(Math.round(gToLb * 100) / 100);
 
       // 数字以外だったらERRORを表示
