@@ -154,6 +154,9 @@ $(function() {
   } else if (aCup !== '' && ml !== '' && flOz !== '') {
     $('#j-cup, #ml, #a-cup, #fl-oz').val('');
 
+  } else if (aCup !== '' && flOz !== '') {
+    $('#j-cup, #ml, #a-cup, #fl-oz').val('');
+
   // ここからflOzの分岐
   } else if (flOz !== '' && jCup !== '') {
     $('#j-cup, #ml, #a-cup, #fl-oz').val('');
