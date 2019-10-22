@@ -92,7 +92,7 @@
   }
 
   .container {
-    padding: 56px 0 40px;
+    padding: 56px 10px 40px;
   }
 
   .content4 .container {
@@ -123,8 +123,8 @@
 
   .content2 input,
   .content3 input {
-    width: 100px;
-    padding: 12px;
+    width: 110px;
+    padding: 11px;
   }
 
 
@@ -142,7 +142,7 @@
 
   .cup-equal1 p,
   .cup-equal2 p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding: 0 16px;
     line-height: 48px;
   }
@@ -162,11 +162,16 @@
   /* 重さ */
 
   .equal-box {
-    width: 25%;
+    width: 20%;
+  }
+
+  .equal-box p {
+    font-size: 1.5rem;
+    line-height: 48px;
   }
 
   .oz-lb-box {
-    width: 75%;
+    width: 80%;
   }
 
   .spoon-left h2,
