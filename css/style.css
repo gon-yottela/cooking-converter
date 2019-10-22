@@ -270,6 +270,18 @@ input {
 
 /* ---------------------------------------- */
 
+/* 広告欄 */
+.ad {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* ---------------------------------------- */
+
 /* フッター */
 footer {
   padding: 20px 0;
