@@ -39,7 +39,6 @@
   .content4 {
     width: 100%;
   }
-
 }
 
 /* タイトルをもうちょっと小さく */
@@ -51,13 +50,11 @@
   }
 }
 
-
-/* もうちょっと小さく */
+/* さらにもうちょっと小さく */
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 2rem;
     margin: 0 16px 0 16px;
-
   }
 
   .title img {
@@ -65,7 +62,6 @@
     height: auto;
   }
 }
-
 
 /* スマホ用 */
 @media screen and (max-width: 568px) {
@@ -78,11 +74,6 @@
     top: 16px;
   }
 
-  /* なんかスマホで国旗の比率がおかしくなるので削除するか… */
-  /* .title img {
-    width: 32px;
-    height: auto;
-  } */
   .title img {
     display: none;
   }
@@ -127,8 +118,7 @@
     padding: 11px;
   }
 
-
-  /* カップ */
+  /* 容積 */
   .cup1,
   .cup2 {
     flex-wrap: wrap;
@@ -152,15 +142,12 @@
     width: 72%;
   }
 
-
   .cup-equal1,
   .input1 {
     margin-bottom: 16px;
   }
 
-
   /* 重さ */
-
   .equal-box {
     width: 20%;
   }
@@ -186,5 +173,4 @@
   footer p {
     font-size: 0.8rem;
   }
-
 }
