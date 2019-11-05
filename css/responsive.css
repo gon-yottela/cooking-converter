@@ -18,7 +18,7 @@
   }
 
   .title {
-    left: 0; /* 微調整をクリアしてセンター揃えに */
+    left: 0; /* タイトルの位置の微調整をクリアしてセンター揃えに */
   }
 
   .title-bg {
@@ -161,6 +161,7 @@
     width: 80%;
   }
 
+  /* 大さじ・小さじ */
   .spoon-left h2,
   .spoon-center p,
   .spoon-right h2 {
@@ -170,6 +171,12 @@
     padding: 8px;
   }
 
+  /* 広告 */
+  .ad-sp {
+    display: inline-block;
+  }
+
+  /* フッター */
   footer p {
     font-size: 0.8rem;
   }
