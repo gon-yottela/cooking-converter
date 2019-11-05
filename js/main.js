@@ -1,6 +1,6 @@
 $(function() {
 
-  // 温度の変換
+  // （1）温度の変換
   $('#btn1').click(function() {
 
     //定義と計算式
@@ -31,7 +31,8 @@ $(function() {
 
   });
 
-  // カップの変換
+
+  // （2）容積の変換
   $('#btn2').click(function() {
 
     //入力値の定義
@@ -58,7 +59,6 @@ $(function() {
     const flOzToJCup = flOzToMl / 200;
     const flOzToACup = flOz / 8;
 
-    //カップに入力があったら他の欄に計算後の数値を出力する
   //カップに入力があったら他の欄に計算後の数値を出力する
   if (jCup !== '' && ml === '' && aCup === '' && flOz === '') {
     $('#ml').val(Math.round(jCupToMl * 10) / 10);
@@ -103,10 +103,7 @@ $(function() {
       $('#j-cup, #ml, #a-cup').val("ERROR");
     }
 
-    // 2箇所以上数値が入力されていたら全てクリアする
-    //---------------力技で全部の組み合わせをいれよう---------------
-    // だけどまずはjCupの分岐からいこう
-
+  // 2箇所以上数値が入力されていたら全てクリアする
   } else if (jCup !== '' && ml !== '') {
     $('#j-cup, #ml, #a-cup, #fl-oz').val('');
 
@@ -177,8 +174,7 @@ $(function() {
   });
 
 
-
-  //重さの変換
+  // （3）重さの変換
   $('#btn3').click(function() {
 
     // 定義
@@ -206,7 +202,7 @@ $(function() {
         $('#oz, #lb').val("ERROR");
       }
 
-    //2ヶ所以上入力がある場合
+    // 2ヶ所以上入力がある場合
   } else if (g !== '' && oz !== '') {
       $('#g, #oz, #lb').val('');
   } else if (g !== '' && oz !== '' && lb !== '') {
@@ -226,12 +222,10 @@ $(function() {
   } else if (oz !== '' && lb !== '') {
       $('#g, #oz, #lb').val('');
 
-
     // lbに入力があったらgとozに数値を表示
   } else if (lb !== '' && g === '' && oz === '') {
       $('#g').val(Math.round(lbToG * 10) / 10);
       $('#oz').val(Math.round(lbToOz * 100) / 100);
-
 
       // 数字以外だったらERRORを表示
       if (isNaN(lb)) {
@@ -240,8 +234,5 @@ $(function() {
   }
 
   });
-
-
-
 
 });
