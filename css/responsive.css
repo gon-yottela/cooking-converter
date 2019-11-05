@@ -172,6 +172,10 @@
   }
 
   /* 広告 */
+  .ad-pc {
+    display: none;
+  }
+  
   .ad-sp {
     display: inline-block;
   }
